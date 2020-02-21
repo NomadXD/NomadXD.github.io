@@ -70,6 +70,32 @@ ga('send', 'pageview');
     background-image: url('nusaa.jpg');
     
 }
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+  height: inherit;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  ;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+@media only screen and (min-width: 600px) {
+.row{
+    max-width: 400px;
+}
+}
+
 </style>
 
 
@@ -99,8 +125,8 @@ ga('send', 'pageview');
 <ul class="list">
 <li style="background-color:rgba(38, 37, 36, 0.7) ;"><a href="./about_me.html" style="font-size:30px;">{About me}</a></li></br>
 <li style="background-color: rgba(38, 37, 36, 0.7);"><a href="./education.html" style="font-size: 30px;">{Education}</a></li></br>
-<li style="background-color: rgba(38, 37, 36, 0.7);"><a href="https://www.paulox.net/code/#top" style="font-size: 30px;">{Technologies}</a></li></br>
-<li style="background-color: rgba(38, 37, 36, 0.7);"><a href="https://www.paulox.net/talks/#top" style="font-size: 30px;">{Projects}</a></li>
+<li style="background-color: rgba(38, 37, 36, 0.7);"><a href="./technologies.html" style="font-size: 30px;">{Technologies}</a></li></br>
+<li style="background-color: rgba(38, 37, 36, 0.7);"><a href="./projects.html" style="font-size: 30px;">{Projects}</a></li>
 <li></li>
 </ul>
 </nav>
@@ -108,40 +134,151 @@ ga('send', 'pageview');
 </aside>
 <main>
 <nav id="top">
-<a href="https://www.paulox.net/" style="font-size: large;"><strong>About me</strong></a>
+<a href="./about_me.html">About me</a>
 <a href="./education.html">Education</a>
-<a href="https://www.paulox.net/category#top">Technologies</a>
-<a href="https://www.paulox.net/tag#top">Projects</a>
+<a href="./technologies.html" style="font-size: large;"><strong>Technologies</strong></a>
+<a href="./projects.html">Projects</a>
 </nav>
-<article class="single">
-<header>
-<h1 id="about">About me&nbsp;☕</h1>
-</header>
-<h3><p>🧑‍💻 NodeJS developer 🦄 Open source contributor 🐧 <span class="caps">GNU</span>/Linux user 🚣Traveller 🔥 AIESECer</p></h3>
-<div>
-<img class="img-center" src="lombok.jpg" alt="images/20190303.jpg">
-<p class="caption">© 2017 Paolo Melchiorre <i>"Photo of Punta Aderci in Abruzzo, Italy"</i> <a target="_blank" rel="noopener" href="https://www.instagram.com/p/BTPCN4fDSOG/">instagram.com/pauloxnet</a></p><h2 id="info">Info<a class="headerlink" href="https://www.paulox.net/about/#info" title="Permanent link">¶</a></h2>
-<p>I'm Lahiru Udayanga, a <b>computer science enthusiast</b> who's interested in applying cutting edge modern technologies to solve real world problems.</p>
-<p>Curretly I'm a computer science engineering undergraduate at <a href="https://www.mrt.ac.lk/web/">University of Moratuwa</a>, Sri Lanka.</p>
-<p>Apart from working in the full stack, I'm interested in <b>neural networks, computer vision and bioinformatics.</b></p>
-<p>I’ve been a <a href="https://www.gnu.org/gnu/linux-and-gnu.en.html"><em><span class="caps">GNU</span>/Linux</em></a> user for 5 years and I use and promote <a href="https://www.paulox.net/code/"><em>Free&nbsp;Software</em></a>.</p>
-<h2 id="contact-me">Contact Me</a></h2>
-<p><em>You can reach me&nbsp;through:</em></p>
-<ul>
-<li>
-<p><i class="fa fa-envelope"></i>&nbsp;<a href="mailto:lahiru97udayanga@gmail.com">lahiru97udayanga@gmail.com</a></p>
-</li>
-<li>
-<p><i class="fa fa-linkedin-in"></i>&nbsp;<a href="https://www.linkedin.com/in/lahiru-udayanga/">Lahiru&nbsp;Udayanga</a></p>
-</li>
-<li>
-<p><i class="fa fa-facebook-f"></i>&nbsp;<a href="https://www.facebook.com/lahiru.udayanga.1029">Lahiru Udayanga</a></p>
-</li>
-</ul>
+<h1 id="about" style="margin-left: 20px;">🎈Technologies&nbsp;</h1>
+<h3 id="about" style="margin-left: 40px;">Languages&nbsp;</h3>
+    <div class="row" style="display: flex;margin-left: 20px;">
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/js.png" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>JavaScript</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/ts.png" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>TypeScript</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/py.png" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>Python</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/java.png" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>Java</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/css.webp" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>CSS</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/html.png" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>HTML</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-3" style="float: left;margin: 10px;">
+            <div class="card">
+                <img src="./images/php1.png" alt="Avatar" style="width: 200px;height: 200px;">
+                <div class="container" style="width: 200px;height: 50px;align-items: center;">
+                  <h4 style="align-self: left;margin:5px;"><b>PHP</b></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<h3 id="about" style="margin-left: 40px;">Frameworks&nbsp;</h3>
+<div class="row" style="display: flex;margin-left: 20px;">
+    <div class="col-3" style="float: left;margin: 10px;">
+        <div class="card">
+            <img src="./images/expressjs.png" alt="Avatar" style="width: 200px;height: 200px;">
+            <div class="container" style="width: 200px;height: 50px;align-items: center;">
+              <h4 style="align-self: left;margin:5px;"><b>ExpressJS</b></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-3" style="float: left;margin: 10px;">
+        <div class="card">
+            <img src="./images/logo.png" alt="Avatar" style="width: 200px;height: 200px;">
+            <div class="container" style="width: 200px;height: 50px;align-items: center;">
+              <h4 style="align-self: left;margin:5px;"><b>MoleculerJS</b></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-3" style="float: left;margin: 10px;">
+        <div class="card">
+            <img src="./images/react.png" alt="Avatar" style="width: 200px;height: 200px;">
+            <div class="container" style="width: 200px;height: 50px;align-items: center;">
+              <h4 style="align-self: left;margin:5px;"><b>ReactJS</b></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-3" style="float: left;margin: 10px;">
+        <div class="card">
+            <img src="./images/tf.png" alt="Avatar" style="width: 200px;height: 200px;">
+            <div class="container" style="width: 200px;height: 50px;align-items: center;">
+              <h4 style="align-self: left;margin:5px;"><b>Tensorflow</b></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-3" style="float: left;margin: 10px;">
+        <div class="card">
+            <img src="./images/bs.png" alt="Avatar" style="width: 200px;height: 200px;">
+            <div class="container" style="width: 200px;height: 50px;align-items: center;">
+              <h4 style="align-self: left;margin:5px;"><b>Bootstrap</b></h4>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 id="about" style="margin-left: 40px;">Database and tooling&nbsp;</h3>
+<div class="row" style="display: flex;margin-left: 20px;">
+<div class="col-3" style="float: left;margin: 10px;">
+    <div class="card">
+        <img src="./images/psql.png" alt="Avatar" style="width: 200px;height: 200px;">
+        <div class="container" style="width: 200px;height: 50px;align-items: center;">
+          <h4 style="align-self: left;margin:5px;"><b>Postgresql</b></h4>
+        </div>
+    </div>
+</div>
+<div class="col-3" style="float: left;margin: 10px;">
+    <div class="card">
+        <img src="./images/mysql.png" alt="Avatar" style="width: 200px;height: 200px;">
+        <div class="container" style="width: 200px;height: 50px;align-items: center;">
+          <h4 style="align-self: left;margin:5px;"><b>MariaDB</b></h4>
+        </div>
+    </div>
+</div>
+<div class="col-3" style="float: left;margin: 10px;">
+    <div class="card">
+        <img src="./images/git.png" alt="Avatar" style="width: 200px;height: 200px;">
+        <div class="container" style="width: 200px;height: 50px;align-items: center;">
+          <h4 style="align-self: left;margin:5px;"><b>Git</b></h4>
+        </div>
+    </div>
+</div>
+<div class="col-3" style="float: left;margin: 10px;">
+    <div class="card">
+        <img src="./images/fb.png" alt="Avatar" style="width: 200px;height: 200px;">
+        <div class="container" style="width: 200px;height: 50px;align-items: center;">
+          <h4 style="align-self: left;margin:5px;"><b>Firebase</b></h4>
+        </div>
+    </div>
+</div>
 
-<h2 id="blog">Blog<a class="headerlink" href="https://www.paulox.net/about/#blog" title="Permanent link">¶</a></h2>
-<p><a href="https://www.paulox.net/">paulox.net</a> is published using <em>Pelican</em>, the theme is a fork of <em>Flex</em> and icons from <em>Font Awesome</em>.</p>
-</article>
+</div>     
+    
 <footer>
 <p>© Copyright 2019-2020 by Lahiru Udayanga</p>
 </footer>
