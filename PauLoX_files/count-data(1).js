@@ -1,0 +1,5 @@
+var DISQUSWIDGETS;
+
+if (typeof DISQUSWIDGETS != 'undefined') {
+    DISQUSWIDGETS.displayCount({"text":{"and":"and","comments":{"zero":"0 Comments","multiple":"{num} Comments","one":"1 Comment"}},"counts":[{"id":"2019\/01\/21\/pyroma-2019\/","comments":0},{"id":"2019\/05\/03\/pyconit-2019\/","comments":0},{"id":"2019\/04\/12\/djangocon-europe-2019\/","comments":0},{"id":"2019\/03\/03\/my-involvement-in-the-python-community\/","comments":6},{"id":"2018\/05\/19\/upgrading-postgresql-from-9-6-to-10-0-on-ubuntu-18-04\/","comments":0},{"id":"2017\/12\/22\/full-text-search-in-django-with-postgresql\/","comments":0},{"id":"2018\/04\/20\/pyconit-2018\/","comments":0},{"id":"2018\/10\/01\/updating-a-django-queryset-with-annotation-and-subquery\/","comments":6},{"id":"2019\/03\/13\/how-to-use-uwsgi-with-python-3-7-in-ubuntu-18-x\/","comments":4},{"id":"2019\/03\/22\/codemotion-rome-2019\/","comments":0}]});
+}
